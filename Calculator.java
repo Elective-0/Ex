@@ -70,9 +70,9 @@ public class Calculator extends JFrame implements ActionListener {
     String s1 = txf1.getText();
     String s2 = txf2.getText();
 
-    int t1 = Integer.parseInt(s1);
-    int t2 = Integer.parseInt(s2);
-    int t = 0;
+    double t1 = Double.parseDouble(s1);
+    double t2 = Double.parseDouble(s2);
+    double t = 0;
 
     if (e.getSource() == butExit) {
       System.exit(0);
@@ -98,6 +98,6 @@ public class Calculator extends JFrame implements ActionListener {
       lblop.setText("/");
     }
 
-    lblout.setText(Integer.toString(t));
+    lblout.setText(Double.toString(t));
   }
 }
